@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="Cassano.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<link rel="shortcut icon" href="favicon-32x32.png"/>
+<title>Cassano - Luxury</title>
+<style>
+	.grid-container{
+		display:grid; /* Hiển thị dạng lưới*/
+		grid-template-columns: auto auto auto auto auto auto auto auto auto auto; /*Mỗi chữ auto là 1 cột */
+		background-color:transparent; /* màu viền*/
+		width:100%;
+	}
+	.grid-container > div {
+		text-align:center;
+		font-size:30px;
+	}
+	.cottrai{
+		grid-column:1;
+		grid-row:1/span 2;
+	}
+	.content{
+		grid-column:3/span 6;
+		grid-rows: 1;
+	}
+	.cotphai{
+		grid-column:10;
+		grid-row:1/span 2;
+	}
+	.cuoitrang{
+		grid-column:1 / span 10;
+		grid-row:3;
+		margin-top:0px;
+		width:100%;
+		height:350px;
+		background-color:#1F1F1F;
+	}
+	.grid-footer{
+		display:grid; /* Hiển thị dạng lưới*/
+		grid-template-columns: auto auto auto auto auto auto auto; /*Mỗi chữ auto là 1 cột */
+		background-color:transparent; /* màu viền*/
+		width:90%;
+		height:90%;
+		margin:40px 0px 0px 120px;
+	}
+	.grid-footer > div {
+		text-align:left;
+		font-size:12px;
+	}
+	.cot-1{
+		grid-column:1;
+		grid-row:1/span 3;
+	}
+	.cot-2{
+		grid-column:2;
+		grid-row:1/span 3;
+	}
+	.cot-3{
+		grid-column:3;
+		grid-row:1/span 3;
+	}
+	.cot-4{
+		grid-column:4;
+		grid-row:1/span 3;
+	}
+	.cot-5{
+		grid-column:5;
+		grid-row:1/span 3;
+	}
+	.cot-6{
+		grid-column:6/span 2;
+		grid-row:1;
+	}
+	.cot-6-1{
+		grid-column:6/span 2;
+		grid-row:2;
+	}
+	.cot-6-2{
+		grid-column:6/span 2;
+		grid-row:3;
+	}
+</style>
+</head>
+<body bgcolor="#FFFFFF";>
+<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  			<div class="container-fluid">
+    			<a class="navbar-brand" href="Cassano.html">Cassano</a>
+    		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        			<li class="nav-item">
+          			<a class="nav-link" target="_blank" href="Contact.html">Contact</a>
+        			</li>
+        			<li class="nav-item">
+          			<a class="nav-link" target="_blank" href="aboutus.html">About us</a>
+        			</li>
+		  			<li class="nav-item">
+          			<a class="nav-link" href="DangNhap.html">Sign in</a>
+        			</li>
+      			</ul>
+      		</div>
+      <span>Welcome, enjoy your experience: <b id="tendn TK" style="color:gold; font-size:18px; font-weight:bold;"><script> document.write(sessionStorage.tendn); sessionStorage.removeItem('tendn');</script></b></span>
+      <form>
+        <input type="search" placeholder="  Searching..." style="height:30px;">
+        <button type="submit" style="color:#FFF; height:30px; background-color:#000; size:30px;">Search</button>
+      </form>
+  			</div>
+		</nav>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <a href="Cassano.html" target="_blank";><img src="img/logo_brand.jpg" style="width:100%; height:250px;"></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <a href="https://www.prada.com/ww/en.html" target="_blank";><img src="img/prada.jpg" style="width:100%; height:250px;"></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <a href="https://www.gucci.com/us/en/" target="_blank";><img src="img/bggucci.png" style="width:100%; height:250px;"></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <a href="https://www.valentino.com/en-vn" target="_blank";><img src="img/Valentino_logo.png" style="width:100%; height:250px;"></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <a href="https://www.armani.com/us/armanicom" target="_blank";><img src="img/armanibg.jpg" style="width:100%; height:250px;"></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <a href="https://www.versace.com" target="_blank";><img src="img/versabg.jpg" style="width:100%; height:250px;"></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <a href="https://www.dolcegabbana.com/en/" target="_blank";><img src="img/D&Gbg.png" style="width:100%; height:250px;"></a>
+</div>
+</div>
+<div style="text-align:center; z-index:1;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+    <div id="menu">
+        <ul>
+        <li><a>MEN</a>
+            <ul>
+            <li><a href="MenShirts.html">SHIRTS</a></li>
+            <li><a href="MenPants.html">PANTS</a></li>
+            </ul>
+        </li>
+        <li><a>WOMEN</a>
+            <ul>
+            <li><a href="WomenShirts.html">SHIRTS</a></li>
+            <li><a href="WomenPants.html">PANTS</a></li>
+            <li><a href="WomenDress.html">DRESS</a></li>
+            </ul>
+        </li>
+        <li><a>WATCHES</a>
+            <ul>
+                <li><a href="WatchesMen.html">MEN</a></li>
+                <li><a href="WatchesWomen.html">WOMEN</a></li>
+            </ul>
+        </li>
+        <li><a>SHOES</a>
+        	<ul>
+                <li><a href="ShoesMen.html">MEN</a></li>
+                <li><a href="ShoesWomen.html">WOMEN</a></li>
+            </ul>
+            </li>
+        <li><a href="HandBag.html">HAND BAG</a></li>
+        <li><a style="border:none;" href="Jewellery.html">JEWELLERY</a></li>
+        </ul>
+    </div>
+    <div class="grid-container">
+    <div class="cottrai">
+    	<img src="img/2cot.jpg" style="width:70px; height:100%;"/>
+    </div>
+	<div class="content">
+	    <p id="title"><strong>MEN'S SHOES</strong></p>
+        <table width="100%" align="center" class="ten-hang">
+        	<tr>
+            	<td>
+                	<a><img src="HÌNH SP/GIÀY/NAM/ARMANI EMPORIO  EA7 ACE RUNNER ($158).jpeg" width="230px" height="220px" /></a>
+                    <a href="https://vn.tower-london.com/emporio-armani-ea7-ace-runner-mens-white-silver-trainers?fo_c=1038&fo_k=3d02978bdfa416d651ec9fe07a82f8ef&fo_s=webgains&wgu=10431_74409_16292595636189_7e23fb9a08&wgexpiry=1637035563&source=webgains&utm_source=webgains&utm_medium=affiliate&siteid=74409&gltm_campaign=pr_r&gltm_source=https://www.tower-london.com/&gltm_medium=wi_proxy&gltm_content=en_GB&gltm_term=a" target="_blank" style="text-decoration:none;"><h2>ARMANI EMPORIO EA7 ACE RUNNER</h2></a>
+                    <p>$ 158</p>
+                    <a href="https://vn.tower-london.com/emporio-armani-ea7-ace-runner-mens-white-silver-trainers?fo_c=1038&fo_k=3d02978bdfa416d651ec9fe07a82f8ef&fo_s=webgains&wgu=10431_74409_16292595636189_7e23fb9a08&wgexpiry=1637035563&source=webgains&utm_source=webgains&utm_medium=affiliate&siteid=74409&gltm_campaign=pr_r&gltm_source=https://www.tower-london.com/&gltm_medium=wi_proxy&gltm_content=en_GB&gltm_term=a" target="_blank"><button class="button" >Buy now</button></a>
+                </td>
+                <td>
+                	<a><img src="HÌNH SP/GIÀY/NAM/ARMANI EMPORIO Men's Shoes Trainers Sneakers ($134).jpg" width="230px" height="220px" /></a>
+                    <a href="https://www.frmoda.com/en/mens-shoes-trainers-sneakers-array-567?utm_source=RakutenMarketing&utm_medium=Affiliate&utm_campaign=3341494:Lyst+US&utm_content=15:71884&utm_term=UKNetwork&ranMID=43101&ranEAID=tZkYzve9Cvk&ranSiteID=tZkYzve9Cvk-O9ll9AF7pOsenVue5vm9Bw" target="_blank" style="text-decoration:none;"><h2>ARMANI EMPORIO Men's Shoes Trainers Sneakers</h2></a>
+                    <p>$ 134</p>
+                    <a href="https://www.frmoda.com/en/mens-shoes-trainers-sneakers-array-567?utm_source=RakutenMarketing&utm_medium=Affiliate&utm_campaign=3341494:Lyst+US&utm_content=15:71884&utm_term=UKNetwork&ranMID=43101&ranEAID=tZkYzve9Cvk&ranSiteID=tZkYzve9Cvk-O9ll9AF7pOsenVue5vm9Bw" target="_blank"><button class="button">Buy now</button></a>
+                </td>
+                <td>
+                	<a><img src="HÌNH SP/GIÀY/NAM/Dolce & Gabbana Miami sneakers in nappa calfskin and mirrired calfskin ($687).jpg" width="230px" height="220px" /></a>
+                    <a href="https://us.dolcegabbana.com/men/shoes/sneakers/sneaker-pelle-white%2Fgold-158054802200801.html?utm_campaign=Lyst%20UK%252FEU&keeplocale=true&utm_medium=AFF&ranEAID=gcdL%252FATRVoE&utm_term=15&ranSiteID=gcdL_ATRVoE-3QQytfLoYefo3QwhfPEovg&ranMID=42394&utm_source=LS&utm_content=gcdL%252FATRVoE" target="_blank" style="text-decoration:none;"><h2>D&G Miami sneakers in nappa calfskin and mirrired calfskin</h2></a>
+                    <p>$ 687</p>
+                    <a href="https://us.dolcegabbana.com/men/shoes/sneakers/sneaker-pelle-white%2Fgold-158054802200801.html?utm_campaign=Lyst%20UK%252FEU&keeplocale=true&utm_medium=AFF&ranEAID=gcdL%252FATRVoE&utm_term=15&ranSiteID=gcdL_ATRVoE-3QQytfLoYefo3QwhfPEovg&ranMID=42394&utm_source=LS&utm_content=gcdL%252FATRVoE" target="_blank"><button class="button">Buy now</button></a>
+                </td>
+                <td>
+                	<a><img src="HÌNH SP/GIÀY/NAM/Dolce & Gabbana Rubber Beachwear Sliders With D&G ($313).jpg" width="230px" height="220px" /></a>
+                    <a href="https://us.dolcegabbana.com/men/shoes/sandals-and-slides/ciabatta-black-158054802201273.html?utm_campaign=Lyst%2BUK%252FEU&keeplocale=true&utm_medium=AFF&ranEAID=gcdL%252FATRVoE&utm_term=15&ranSiteID=gcdL_ATRVoE-Xw9OsewRn2.kiZBbqQyC0A&ranMID=42394&utm_source=LS&utm_content=gcdL%252FATRVoE" target="_blank" style="text-decoration:none;"><h2 >Dolce & Gabbana Rubber Beachwear Sliders</h2></a>
+                    <p>$ 313</p>
+                    <a href="https://us.dolcegabbana.com/men/shoes/sandals-and-slides/ciabatta-black-158054802201273.html?utm_campaign=Lyst%2BUK%252FEU&keeplocale=true&utm_medium=AFF&ranEAID=gcdL%252FATRVoE&utm_term=15&ranSiteID=gcdL_ATRVoE-Xw9OsewRn2.kiZBbqQyC0A&ranMID=42394&utm_source=LS&utm_content=gcdL%252FATRVoE" target="_blank"><button class="button">Buy now</button></a>
+                </td>
+            </tr>
+            <tr>
+            	<td>
+                	<a><img src="HÌNH SP/GIÀY/NAM/Gucci Double G Lace-Up Ankle Boots ($1028).jpg" width="230px" height="220px" /></a>
+                    <a href="https://www.cettire.com/products/gucci-double-g-lace-up-ankle-boots-92668034?variant=32166934413425&clickref=1101lhqiBQc7" target="_blank" style="text-decoration:none;"><h2>Gucci Double G Lace-Up Ankle Boots</h2></a>
+                    <p>$ 1,028</p>
+                    <a href="https://www.cettire.com/products/gucci-double-g-lace-up-ankle-boots-92668034?variant=32166934413425&clickref=1101lhqiBQc7" target="_blank"><button class="button">Buy now</button></a>
+                </td>
+                <td>
+                	<a><img src="HÌNH SP/GIÀY/NAM/Gucci Men's Jordaan Leather Loafer ($730).jpeg" width="230px" height="220px" /></a>
+                    <a href="https://www.ruelala.com/boutique/product/159121/135287468/?deeplink=false&utm_medium=affiliate&partner=ebay&utm_content=1-5478&creative=1-5478&utm_campaign=58012&clid=3662770842&clickId=3662770842&utm_source=EEAN&subid=58012&dsi=DIR-835042716--129c2394-876d-495c-ab6c-d53af2def97f" target="_blank" style="text-decoration:none;"><h2>Gucci Men's Jordaan Leather Loafer</h2></a>
+                    <p>$ 730</p>
+                    <a href="https://www.ruelala.com/boutique/product/159121/135287468/?deeplink=false&utm_medium=affiliate&partner=ebay&utm_content=1-5478&creative=1-5478&utm_campaign=58012&clid=3662770842&clickId=3662770842&utm_source=EEAN&subid=58012&dsi=DIR-835042716--129c2394-876d-495c-ab6c-d53af2def97f" target="_blank"><button class="button">Buy now</button></a>
+                </td>
+                <td>
+                	<a><img src="HÌNH SP/GIÀY/NAM/Prada Ankle Pouch Combat Boots ($1665).webp" width="230px" height="220px" /></a>
+                    <a href="https://www.eraldo.com/fr/shopping/ankle-pouch-combat-boots-15623442?utm_medium=affiliate&utm_source=2523611:Lyst+UK%2FEU&utm_campaign=rakutenmarketing&utm_content=10&utm_term=uknetwork&ranMID=44100&ranEAID=gcdL%2FATRVoE&ranSiteID=gcdL_ATRVoE-UHO9HHfTvs.ihVBGiqhv7g" target="_blank" style="text-decoration:none;"><h2>Prada Ankle Pouch <br />Combat Boots</h2></a>
+                    <p>$ 1,665</p>
+                    <a href="https://www.eraldo.com/fr/shopping/ankle-pouch-combat-boots-15623442?utm_medium=affiliate&utm_source=2523611:Lyst+UK%2FEU&utm_campaign=rakutenmarketing&utm_content=10&utm_term=uknetwork&ranMID=44100&ranEAID=gcdL%2FATRVoE&ranSiteID=gcdL_ATRVoE-UHO9HHfTvs.ihVBGiqhv7g" target="_blank"><button class="button">Buy now</button></a>
+                </td>
+                <td>
+                	<a><img src="HÌNH SP/GIÀY/NAM/Prada Derby Lace-Up Shoes ($629).jpg" width="230px" height="220px" /></a>
+                    <a href="https://www.cettire.com/products/prada-derby-lace-up-shoes-92815644?variant=31880497430641&clickref=1101lhqiEbyP" target="_blank" style="text-decoration:none;"><h2>Prada Derby<br /> Lace-Up Shoes</h2></a>
+                    <p>$ 629</p>
+                    <a href="https://www.cettire.com/products/prada-derby-lace-up-shoes-92815644?variant=31880497430641&clickref=1101lhqiEbyP" target="_blank"><button class="button">Buy now</button></a>
+                </td>
+            </tr>
+            <tr>
+            	<td>
+                	<a><img src="HÌNH SP/GIÀY/NAM/Valentino Leather & Mesh Sneaker ($300).jpeg" width="230px" height="220px" /></a>
+                    <a href="https://www.gilt.com/boutique/product/185496/133695408/?deeplink=false&utm_medium=affiliate&partner=ebay&utm_content=58012&creative=2-384696&utm_campaign=gilt&clickId=3667706179&utm_source=EEAN&subid=58012&dsi=DIR-835042716--43ef8156-825d-4610-af0b-466026c46304" target="_blank" style="text-decoration:none;"><h2>Valentino Leather & Mesh Sneaker</h2></a>
+                    <p>$ 300</p>
+                    <a href="https://www.gilt.com/boutique/product/185496/133695408/?deeplink=false&utm_medium=affiliate&partner=ebay&utm_content=58012&creative=2-384696&utm_campaign=gilt&clickId=3667706179&utm_source=EEAN&subid=58012&dsi=DIR-835042716--43ef8156-825d-4610-af0b-466026c46304" target="_blank"><button class="button">Buy now</button></a>
+                </td>
+                <td>
+                	<a><img src="HÌNH SP/GIÀY/NAM/Valentino X Undercover Climber Logo Sneakers ($558).jpeg" width="230px" height="220px" /></a>
+                    <a href="https://www.cettire.com/products/192032lsn000017-1ad-1?variant=30724474044529&clickref=1011lhtE2R7S" target="_blank" style="text-decoration:none;"><h2>Valentino X Undercover Climber Logo Sneakers</h2></a>
+                    <p>$ 558</p>
+                    <a href="https://www.cettire.com/products/192032lsn000017-1ad-1?variant=30724474044529&clickref=1011lhtE2R7S" target="_blank"><button class="button">Buy now</button></a>
+                </td>
+                <td>
+                	<a><img src="HÌNH SP/GIÀY/NAM/Versace Medusa Pool Slides ($303).jpeg" width="230px" height="220px" /></a>
+                    <a href="https://www.cettire.com/products/versace-medusa-pool-slides-97698624?variant=39423516606577&clickref=1011lhtE3yWU" target="_blank" style="text-decoration:none;"><h2>Versace Medusa<br /> Pool Slides</h2></a>
+                    <p>$ 303</p>
+                    <a href="https://www.cettire.com/products/versace-medusa-pool-slides-97698624?variant=39423516606577&clickref=1011lhtE3yWU" target="_blank"><button class="button">Buy now</button></a>
+                </td>
+                <td>
+                	<a><img src="HÌNH SP/GIÀY/NAM/Versace Studded Low-Top Sneakers ($599).jpg" width="230px" height="220px" /></a>
+                    <a href="https://www.cettire.com/products/versace-studded-low-top-sneakers-97715374?variant=39421550002289&clickref=1100lhqrrBWj" target="_blank" style="text-decoration:none;"><h2>Versace Studded Low-Top Sneakers</h2></a>
+                    <p>$ 599</p>
+                    <a href="https://www.cettire.com/products/versace-studded-low-top-sneakers-97715374?variant=39421550002289&clickref=1100lhqrrBWj" target="_blank"><button class="button">Buy now</button></a>
+                </td>
+            </tr>
+        </table>
+</div>
+	<div class="cotphai">
+    	<img src="img/2cot.jpg" style="width:70px; height:100%;" />
+    </div>
+    <div class="cuoitrang">
+    	<div class="grid-footer">
+        	<div class="cot-1">
+            <p class="footer-title">Co-op brands</p>
+            <a class="footer-link" href="https://www.prada.com/ww/en.html" target="_blank">✩ Prada </a>
+            <br />
+            <a class="footer-link" href="https://www.gucci.com/us/en/" target="_blank">✩ Gucci </a>
+            <br />
+            <a class="footer-link" href="https://www.valentino.com/en-vn" target="_blank">✩ Valentino </a>
+            <br />
+            <a class="footer-link" href="https://www.armani.com/us/armanicom" target="_blank">✩ Armani </a>
+            <br />
+            <a class="footer-link" href="https://www.versace.com" target="_blank">✩ Versace </a>
+            <br />
+            <a class="footer-link" href="https://www.dolcegabbana.com/en/" target="_blank">✩ Dolce&Gabbana </a>
+            </div>
+            <div class="cot-2">
+            <p class="footer-title">brand suggestions</p>
+            <a class="footer-link" href="https://us.louisvuitton.com/eng-us/homepage" target="_blank">✩ Louis Vuitton </a>
+            <br />
+            <a class="footer-link" href="https://www.chanel.com/us/" target="_blank">✩ Chanel </a>
+            <br />
+            <a class="footer-link" href="https://www.dior.com/en_int" target="_blank">✩ Dior </a>
+            <br />
+            <a class="footer-link" href="https://www.hermes.com/us/en/" target="_blank">✩ Hermes </a>
+            <br />
+            <a class="footer-link" href="https://us.burberry.com/?selected=Y" target="_blank">✩ Burberry </a>
+            <br />
+            <a class="footer-link" href="https://www.givenchy.com/us/en-US/homepage" target="_blank">✩ Givenchy </a>
+            <br />
+            <a class="footer-link" href="https://www.fendi.com/us/" target="_blank">✩ Fendi </a>
+            <br />
+            <a class="footer-link" href="https://www.ysl.com/en-en" target="_blank">✩ Yves Saint Laurent </a>
+            </div>
+            <div class="cot-3">
+            <p class="footer-title">need help?</p>
+            <a class="footer-link" href="Cassano.html">➢ Home page </a>
+            <br />
+            <a class="footer-link" href="Contact.html" target="_blank">☏ Contact </a>
+            <br />
+            <a class="footer-link" href="aboutus.html" target="_blank">✧ About us </a>
+            </div>
+            <div class="cot-4">
+            <p class="footer-title">find us on</p>
+            <h2>Ngọc Lan</h2>
+            <a class="footer-link" href="Cassano.html" target="_blank">➩ Facebook </a>
+            <br />
+            <a class="footer-link" href="Cassano.html" target="_blank">➩ Instagram </a>
+            <br /><br />
+            <h2>Đình Huy</h2>
+            <a class="footer-link" href="Cassano.html" target="_blank">➩ Facebook </a>
+            <br />
+            <a class="footer-link" href="Cassano.html" target="_blank">➩ Instagram </a>
+            <br /><br />
+            <h2>Thành Nhân</h2>
+            <a class="footer-link" href="Cassano.html" target="_blank">➩ Facebook </a>
+            <br />
+            <a class="footer-link" href="Cassano.html" target="_blank">➩ Instagram </a>
+            </div>
+            <div class="cot-6">
+            <p class="footer-title">sign in to get updates about page</p>
+            <a href="DangNhap.html"><button class="button-footer">➣ Sign in now</button></a>
+            </div>
+            <div class="cot-6-1">
+            <p class="footer-title">store location</p>
+            <a href="https://www.google.com/maps/place/HCMC+University+of+Food+Industry/@10.8268131,106.5993977,14z/data=!4m19!1m13!4m12!1m4!2m2!1d106.6173419!2d10.848205!4e1!1m6!1m2!1s0x31752be27d8b4f4d:0x92dcba2950430867!2zVHLGsOG7nW5nIMSQYcyjaSBob8yjYyBDw7RuZyBuZ2hp4buHcCBUaOG7sWMgcGjhuqltIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgMTQwIEzDqiBUcuG7jW5nIFThuqVuLCBUw6J5IFRo4bqhbmgsIFTDom4gUGjDuiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!2m2!1d106.6288567!2d10.8065148!3m4!1s0x31752be27d8b4f4d:0x92dcba2950430867!8m2!3d10.8065148!4d106.6288567" target="_blank"><button class="button-footer">⚐ 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh.</button></a>
+            </div>
+            <div class="cot-6-2">
+            <img class="footer-img" src="img/prada.jpg" />
+            <img class="footer-img" src="img/gucci.png" />
+            <img class="footer-img" src="img/Valentino_logo.png" />
+            <img class="footer-img" src="img/1-giorgio-armani.jpg" />
+            <img class="footer-img" src="img/versa.png" />
+            <img class="footer-img" src="img/D-andG-thumb.jpg" />
+            </div>
+        </div>
+    </div>
+    </div>
+<!--	Credit	-->
+	<div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            	<p>
+                     © 2021 Cassano - Luxury Corporation. ♕ All rights reserved ☘
+                </p>
+        </div>
+    </div>
+
+<!--	Credit	-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) 
+  {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) 
+  {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // thay doi moi 4 giay
+}
+</script>
+</body>
+</html>

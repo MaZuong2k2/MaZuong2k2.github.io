@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon-32x32.png"/>
+<title>Sign in</title>
+<style>
+	.khung{
+		border-radius:10px; 
+		float:right; 
+		margin-top:135px; 
+		margin-right:60px; 
+		width:350px; 
+		box-shadow: 1px 1px 7px #CCC;
+		background-color:#FFF;
+		border:black 1px solid;
+	}
+	span{
+		color:#F00;
+		display:block;
+		padding: 5px 0px 20px 0px;
+		}
+	input[type=button]:hover {
+		background-color: #333;
+		text-decoration: blink;
+		font-weight:bolder;
+		}
+	input[type=button]{
+		height:40px;
+		width:310px; 
+		color:#FFF; 
+		border:none; 
+		font-size:16px; 
+		margin-bottom:20px; 
+		cursor:pointer;
+		background: #000;
+		overflow: hidden;
+	}
+</style>
+</head>
+
+<body >
+<img src="img/dangnhap.jpg" style="position:fixed;top:0px;left:0px; width:100%; height:100%; z-index:-1; background:no-repeat;"/>
+<div class="khung">
+	<img src="img/logo_brand.jpg" width="330px" height="100px" style="margin:10px 20px 10px 10px;" />
+    <h1 style="text-align:center; color:#000; font-weight:bold; font-size:22px; font-family:Arial, Helvetica, sans-serif;">ĐĂNG NHẬP MUA HÀNG</h1>
+    <form name="F1" id="F1" method="post">
+		<div style="margin-left:20px;">
+        	<label style="font-weight:bolder;">Tài khoản</label>
+        <br />
+        <input type="text" style="height:35px; width:305px; background-color:#E0E0E0; border:none; margin-top:5px; " name="tendn" placeholder="  Nhập tài khoản" id="tendn" />
+        <span id="TendnError"></span>
+        	<label style="font-weight:bolder;">Mật khẩu</label>
+        <br />
+        <input type="password" style="height:35px; width:305px; background-color:#E0E0E0; border:none; margin-top:5px;" placeholder="  Nhập mật khẩu" name="Pass" id="Pass" />
+        <span id="PassError"></span>
+        <a href="Cassano.html"><input type="button" value="Đăng nhập" onclick="KiemTra(); return false; reset;"/></a>
+    </form>
+</div>
+<script>
+	function KiemTra()
+	{
+		var flag=true;
+		var Tendn = document.getElementById("tendn").value.trim();
+		if(Tendn.length<6)
+		{
+			flag = false;
+			document.getElementById("TendnError").innerHTML = "Tài khoản phải lớn hơn 5 ký tự !";
+		}
+		else
+		{
+			sessionStorage.tendn = document.forms ["F1"] ["tendn"].value;
+			document.getElementById("TK").innerHTML = tendn;
+		}
+		var Pass = document.getElementById("Pass").value.trim();
+		if(Pass== '' || Pass.length <11)
+		{
+			flag = false;
+			document.getElementById("PassError").innerHTML = "Mật khẩu phải trên 10 ký tự !";
+		}
+	}
+</script>
+</div>
+</body>
+</html>
